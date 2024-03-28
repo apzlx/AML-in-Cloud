@@ -58,8 +58,7 @@ def run_experiment(model_name, data_path):
     model = initialize_model(model_name)
     train_model(model, dataloader)
     
-model_names = ["resnet50"]
-# model_names = ["resnet50", "efficientnet_b0", "vgg16"]
+model_names = ["resnet50", "efficientnet_b0", "vgg16"]
 data_path = "./imagenette2-160"
 
 for model_name in model_names:

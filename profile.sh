@@ -9,7 +9,7 @@ CMD="python3 main.py -a $MODEL --gpu 0 --epoch 1 -b 64 ./imagenet"
 METRICS="dram__sectors.sum,dram__bytes.sum,smsp__sass_thread_inst_executed_op_fadd_pred_on.sum,smsp__sass_thread_inst_executed_op_fmul_pred_on.sum,smsp__sass_thread_inst_executed_op_ffma_pred_on.sum,smsp__sass_thread_inst_executed_op_dadd_pred_on.sum,smsp__sass_thread_inst_executed_op_dfma_pred_on.sum,smsp__sass_thread_inst_executed_op_dmul_pred_on.sum,smsp__sass_thread_inst_executed_op_hadd_pred_on.sum,smsp__sass_thread_inst_executed_op_hfma_pred_on.sum,smsp__sass_thread_inst_executed_op_hmul_pred_on.sum"
 
 rm -rf $GPU/$MODEL
-mkdir $GPU/$MODEL
+mkdir -p $GPU/$MODEL
 NCU_RAW_LOG="$GPU/$MODEL/ncu-log-$MODEL.txt"
 NCU_METRICS_LOG="$GPU/$MODEL/ncu-final-metric-$MODEL.txt"
 

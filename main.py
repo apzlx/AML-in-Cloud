@@ -20,6 +20,7 @@ import torchvision.models as models
 import torchvision.transforms as transforms
 from torch.optim.lr_scheduler import StepLR
 from torch.utils.data import Subset
+import torch.cuda.profiler as profiler
 
 model_names = sorted(name for name in models.__dict__
     if name.islower() and not name.startswith("__")
@@ -317,13 +318,15 @@ def train(train_loader, model, criterion, optimizer, epoch, device, args):
 
     end = time.time()
     for i, (images, target) in enumerate(train_loader):
+        
         # measure data loading time
         data_time.update(time.time() - end)
 
         # move data to the same device as model
         images = images.to(device, non_blocking=True)
         target = target.to(device, non_blocking=True)
-
+        
+        profiler.start()
         # compute output
         output = model(images)
         loss = criterion(output, target)
@@ -337,8 +340,11 @@ def train(train_loader, model, criterion, optimizer, epoch, device, args):
         # compute gradient and do SGD step
         optimizer.zero_grad()
         loss.backward()
-        optimizer.step()
 
+        profiler.stop()
+
+        optimizer.step()
+        
         # measure elapsed time
         batch_time.update(time.time() - end)
         end = time.time()
@@ -346,6 +352,7 @@ def train(train_loader, model, criterion, optimizer, epoch, device, args):
         if i % args.print_freq == 0:
             progress.display(i + 1)
 
+        break
 
 def validate(val_loader, model, criterion, args):
 
@@ -378,7 +385,8 @@ def validate(val_loader, model, criterion, args):
 
                 if i % args.print_freq == 0:
                     progress.display(i + 1)
-
+                break
+            
     batch_time = AverageMeter('Time', ':6.3f', Summary.NONE)
     losses = AverageMeter('Loss', ':.4e', Summary.NONE)
     top1 = AverageMeter('Acc@1', ':6.2f', Summary.AVERAGE)

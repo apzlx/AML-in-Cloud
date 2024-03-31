@@ -5,7 +5,7 @@ GPU=$2
 NCU_PATH="/usr/local/cuda/bin/ncu"
 NSYS_PATH="/usr/local/cuda/bin/nsys"
 
-CMD="python3 main.py -a $MODEL --gpu 0 --epoch 1 -b 64 ./imagenet"
+CMD="/opt/conda/bin/python3 /AML-in-Cloud/main.py -a $MODEL --gpu 0 --epoch 1 -b 16 /AML-in-Cloud/imagenet"
 METRICS="dram__sectors.sum,dram__bytes.sum,smsp__sass_thread_inst_executed_op_fadd_pred_on.sum,smsp__sass_thread_inst_executed_op_fmul_pred_on.sum,smsp__sass_thread_inst_executed_op_ffma_pred_on.sum,smsp__sass_thread_inst_executed_op_dadd_pred_on.sum,smsp__sass_thread_inst_executed_op_dfma_pred_on.sum,smsp__sass_thread_inst_executed_op_dmul_pred_on.sum,smsp__sass_thread_inst_executed_op_hadd_pred_on.sum,smsp__sass_thread_inst_executed_op_hfma_pred_on.sum,smsp__sass_thread_inst_executed_op_hmul_pred_on.sum"
 
 rm -rf $GPU/$MODEL
@@ -15,7 +15,7 @@ NCU_METRICS_LOG="$GPU/$MODEL/ncu-final-metric-$MODEL.txt"
 
 echo "********** NCU PROFILING STARTS **********"
 
-sudo $NCU_PATH  --profile-from-start off -f --log-file $NCU_RAW_LOG --metrics $METRICS --target-processes all $CMD
+sudo $NCU_PATH --profile-from-start off -f --log-file $NCU_RAW_LOG --metrics $METRICS --target-processes all $CMD
 
 # compute bytes
 BYTES=`cat $NCU_RAW_LOG | grep -e "dram__bytes.sum" | grep -e " byte" | sed -e "s/,/ /g" | awk '{print($3)}' | paste -sd+ | bc`

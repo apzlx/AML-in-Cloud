@@ -15,7 +15,7 @@ NCU_METRICS_LOG="$GPU/$MODEL/ncu-final-metric-$MODEL.txt"
 
 echo "********** NCU PROFILING STARTS **********"
 
-$NCU_PATH  --profile-from-start off -f --log-file $NCU_RAW_LOG --metrics $METRICS --target-processes all $CMD
+sudo $NCU_PATH  --profile-from-start off -f --log-file $NCU_RAW_LOG --metrics $METRICS --target-processes all $CMD
 
 # compute bytes
 BYTES=`cat $NCU_RAW_LOG | grep -e "dram__bytes.sum" | grep -e " byte" | sed -e "s/,/ /g" | awk '{print($3)}' | paste -sd+ | bc`
@@ -55,8 +55,8 @@ NSYS_RAW_LOG="$GPU/$MODEL/nsys-log-$MODEL.qdrep"
 NSYS_METRICS_LOG="$GPU/$MODEL/nsys-final-metric-$MODEL.txt"
 
 echo "********** NSYS PROFILING STARTS **********"
-$NSYS_PATH profile -f true -o $NSYS_RAW_LOG $CMD
-$NSYS_PATH stats --report gputrace $NSYS_RAW_LOG -o $GPU/$MODEL/tmp_nsys
+sudo $NSYS_PATH profile -f true -o $NSYS_RAW_LOG $CMD
+sudo $NSYS_PATH stats --report gputrace $NSYS_RAW_LOG -o $GPU/$MODEL/tmp_nsys
 # compute runtime
 echo "Runtime(nanosec)" >> $NSYS_METRICS_LOG
 tail -n +2 $GPU/$MODEL/tmp_nsys_gputrace.csv | sed -e "s/,/ /g" | awk '{print $2}' | paste -sd+ | bc >> $NSYS_METRICS_LOG

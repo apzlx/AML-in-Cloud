@@ -1,0 +1,2120 @@
+==PROF== Connected to process 14298 (/opt/conda/bin/python3.10)
+==PROF== Profiling "computeOffsetsKernel" - 0: 0%....50%....100% - 3 passes
+==PROF== Profiling "cudnn_infer_volta_scudnn_128x..." - 1: 0%....50%....100% - 3 passes
+==PROF== Profiling "elementwise_kernel" - 2: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 3: 0%....50%....100% - 3 passes
+==PROF== Profiling "max_pool_forward_nchw" - 4: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData9x9_5x5" - 5: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter9x9_5x5" - 6: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nn" - 7: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput9x9_5x5" - 8: 0%....50%....100% - 3 passes
+==PROF== Profiling "elementwise_kernel" - 9: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 10: 0%....50%....100% - 3 passes
+==PROF== Profiling "max_pool_forward_nchw" - 11: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData4x4" - 12: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter4x4" - 13: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_32x128_nn" - 14: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput4x4" - 15: 0%....50%....100% - 3 passes
+==PROF== Profiling "elementwise_kernel" - 16: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 17: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData4x4" - 18: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter4x4" - 19: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nn" - 20: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput4x4" - 21: 0%....50%....100% - 3 passes
+==PROF== Profiling "elementwise_kernel" - 22: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 23: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData4x4" - 24: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter4x4" - 25: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nn" - 26: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput4x4" - 27: 0%....50%....100% - 3 passes
+==PROF== Profiling "elementwise_kernel" - 28: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 29: 0%....50%....100% - 3 passes
+==PROF== Profiling "max_pool_forward_nchw" - 30: 0%....50%....100% - 3 passes
+==PROF== Profiling "adaptive_average_pool" - 31: 0%....50%....100% - 3 passes
+==PROF== Profiling "fused_dropout_kernel_vec" - 32: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x32_sliced1x4_tn" - 33: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 34: 0%....50%....100% - 3 passes
+==PROF== Profiling "fused_dropout_kernel_vec" - 35: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x32_sliced1x4_tn" - 36: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 37: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_128x32_sliced1x4_tn" - 38: 0%....50%....100% - 3 passes
+==PROF== Profiling "splitKreduce_kernel" - 39: 0%....50%....100% - 3 passes
+==PROF== Profiling "softmax_warp_forward" - 40: 0%....50%....100% - 3 passes
+==PROF== Profiling "nll_loss_forward_reduce_cuda_..." - 41: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 42: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 43: 0%....50%....100% - 3 passes
+==PROF== Profiling "nll_loss_backward_reduce_cuda..." - 44: 0%....50%....100% - 3 passes
+==PROF== Profiling "softmax_warp_backward" - 45: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_32x32_sliced1x4_nn" - 46: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_128x32_nt" - 47: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 48: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 49: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x32_sliced1x4_nn" - 50: 0%....50%....100% - 3 passes
+==PROF== Profiling "splitKreduce_kernel" - 51: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_128x32_nt" - 52: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 53: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 54: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 55: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_128x32_sliced1x4_nn" - 56: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_128x64_nt" - 57: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 58: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 59: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 60: 0%....50%....100% - 3 passes
+==PROF== Profiling "atomic_adaptive_average_gradi..." - 61: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 62: 0%....50%....100% - 3 passes
+==PROF== Profiling "max_pool_backward_nchw" - 63: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 64: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData4x4" - 65: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter4x4" - 66: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nt" - 67: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput4x4" - 68: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradData4x4" - 69: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradDelta4x4" - 70: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nt" - 71: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradOutput4x4" - 72: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 73: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 74: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData4x4" - 75: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter4x4" - 76: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_32x128_nt" - 77: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput4x4" - 78: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradData4x4" - 79: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradDelta4x4" - 80: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_32x128_nt" - 81: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradOutput4x4" - 82: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 83: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 84: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData4x4" - 85: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter4x4" - 86: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nt" - 87: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput4x4" - 88: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradData4x4" - 89: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradDelta4x4" - 90: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nt" - 91: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradOutput4x4" - 92: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 93: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 94: 0%....50%....100% - 3 passes
+==PROF== Profiling "max_pool_backward_nchw" - 95: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 96: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData9x9_5x5" - 97: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardFilter9x9_5x5" - 98: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nt" - 99: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardOutput9x9_5x5" - 100: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradForwardData9x9_5x5" - 101: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradDelta9x9_5x5" - 102: 0%....50%....100% - 3 passes
+==PROF== Profiling "volta_sgemm_64x64_nn" - 103: 0%....50%....100% - 3 passes
+==PROF== Profiling "winogradWgradOutput9x9_5x5" - 104: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 105: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 106: 0%....50%....100% - 3 passes
+==PROF== Profiling "max_pool_backward_nchw" - 107: 0%....50%....100% - 3 passes
+==PROF== Profiling "vectorized_elementwise_kernel" - 108: 0%....50%....100% - 3 passes
+==PROF== Profiling "wgrad_alg0_engine" - 109: 0%....50%....100% - 3 passes
+==PROF== Profiling "reduce_kernel" - 110: 0%....50%....100% - 3 passes
+==PROF== Target process 14316 terminated before first instrumented API call.
+==PROF== Target process 14324 terminated before first instrumented API call.
+==PROF== Target process 14325 terminated before first instrumented API call.
+==PROF== Target process 14340 terminated before first instrumented API call.
+==PROF== Target process 14748 terminated before first instrumented API call.
+==PROF== Target process 14757 terminated before first instrumented API call.
+==PROF== Target process 14758 terminated before first instrumented API call.
+==PROF== Target process 14750 terminated before first instrumented API call.
+==PROF== Disconnected from process 14298
+[14298] python3.10@127.0.0.1
+  void cask_cudnn_infer::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn_infer::ComputeOffsetsParams) (12, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte         3.04
+    dram__sectors.sum                                        sector           95
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  cudnn_infer_volta_scudnn_128x64_relu_xregs_large_nn_v1 (379, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        23.26
+    dram__sectors.sum                                        sector       726737
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3104768
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst   1142554624
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3104768
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (12100, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        23.39
+    dram__sectors.sum                                        sector       730937
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      3097600
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3) (6050, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        23.37
+    dram__sectors.sum                                        sector       730279
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::max_pool_forward_nchw<float, float>(int, const T1 *, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *, long *) (2916, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        19.84
+    dram__sectors.sum                                        sector       619930
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (2, 64, 1)x(936, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         8.40
+    dram__sectors.sum                                        sector       262482
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3833856
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst     26597376
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      1629184
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (1, 192, 1)x(64, 13, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         8.13
+    dram__sectors.sum                                        sector       254025
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2433024
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      7520256
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nn (3, 3, 169)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        32.06
+    dram__sectors.sum                                        sector      1001866
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    398721024
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      6230016
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (2, 192, 1)x(936, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        27.52
+    dram__sectors.sum                                        sector       859920
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       608256
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst     53941248
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2847744
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (8748, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.53
+    dram__sectors.sum                                        sector       516464
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      2239488
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3) (4374, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.56
+    dram__sectors.sum                                        sector       517600
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::max_pool_forward_nchw<float, float>(int, const T1 *, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *, long *) (2028, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        13.82
+    dram__sectors.sum                                        sector       431805
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (1, 192, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         7.80
+    dram__sectors.sum                                        sector       243816
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      4718592
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (6, 48, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        11.82
+    dram__sectors.sum                                        sector       369452
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      1990656
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      1990656
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_32x128_nn (8, 3, 36)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        30.48
+    dram__sectors.sum                                        sector       952347
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    679477248
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3538944
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (1, 384, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        17.26
+    dram__sectors.sum                                        sector       539347
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3987456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      8902656
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3987456
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (4056, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         6.63
+    dram__sectors.sum                                        sector       207057
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      1038336
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3) (2028, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         6.64
+    dram__sectors.sum                                        sector       207379
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (1, 384, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.76
+    dram__sectors.sum                                        sector       523701
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      9437184
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      4718592
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      4718592
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (12, 32, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.17
+    dram__sectors.sum                                        sector       505426
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2654208
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      2654208
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nn (4, 4, 36)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        45.04
+    dram__sectors.sum                                        sector      1407566
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    905969664
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (1, 256, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        11.13
+    dram__sectors.sum                                        sector       347810
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2658304
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      5935104
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2658304
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (2704, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         3.85
+    dram__sectors.sum                                        sector       120283
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst       692224
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3) (1352, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         3.84
+    dram__sectors.sum                                        sector       120122
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (1, 256, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.76
+    dram__sectors.sum                                        sector       336225
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      6291456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (8, 32, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.33
+    dram__sectors.sum                                        sector       322929
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      1769472
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      1769472
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nn (4, 4, 36)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        30.43
+    dram__sectors.sum                                        sector       950814
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    603979776
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (1, 256, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        11.10
+    dram__sectors.sum                                        sector       346833
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2658304
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      5935104
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2658304
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3) (2704, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         3.85
+    dram__sectors.sum                                        sector       120317
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst       692224
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3) (1352, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         3.85
+    dram__sectors.sum                                        sector       120188
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::max_pool_forward_nchw<float, float>(int, const T1 *, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *, long *) (576, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         2.99
+    dram__sectors.sum                                        sector        93435
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::adaptive_average_pool<float>(const T1 *, T1 *, int, int, int, int, long, long, long) (4096, 1, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       600.58
+    dram__sectors.sum                                        sector        18768
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       147456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      1474560
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::fused_dropout_kernel_vec<float, float, unsigned int, (int)1, (int)4, bool>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<T6, T3>, T3, T2, at::PhiloxCudaState) (576, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       595.14
+    dram__sectors.sum                                        sector        18598
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst        36864
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst       221184
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       294912
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x32_sliced1x4_tn (64, 1, 7)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte       155.69
+    dram__sectors.sum                                        sector      4865396
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2752512
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst   1234042880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3670016
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3) (128, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       264.32
+    dram__sectors.sum                                        sector         8260
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::fused_dropout_kernel_vec<float, float, unsigned int, (int)1, (int)4, bool>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<T6, T3>, T3, T2, at::PhiloxCudaState) (256, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       267.26
+    dram__sectors.sum                                        sector         8352
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst        16384
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst        98304
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       131072
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x32_sliced1x4_tn (64, 1, 7)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        71.19
+    dram__sectors.sum                                        sector      2224757
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2752512
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    558759936
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3670016
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(at::TensorIteratorBase &, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3) (128, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       264.32
+    dram__sectors.sum                                        sector         8260
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_128x32_sliced1x4_tn (8, 1, 10)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        18.78
+    dram__sectors.sum                                        sector       586741
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       983040
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    136314880
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      1310720
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)1, (bool)1, (bool)0>(cublasSplitKParams<T6>, const T4 *, const T5 *, T5 *, const T6 *, const T6 *, const T7 *, const T4 *, T7 *, void *, long, T6 *, int *) (32, 1, 1)x(32, 16, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       651.36
+    dram__sectors.sum                                        sector        20355
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       176000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst        16000
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void <unnamed>::softmax_warp_forward<float, float, float, (int)10, (bool)1, (bool)0>(T2 *, const T1 *, int, int, int, const bool *, int, bool) (4, 1, 1)x(32, 4, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte        76.16
+    dram__sectors.sum                                        sector         2380
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst        51840
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst        87552
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst          512
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::nll_loss_forward_reduce_cuda_kernel_2d<float, float, long>(T1 *, T1 *, const T1 *, const T3 *, const T1 *, bool, long, long, long, long) (1, 1, 1)x(32, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte         6.11
+    dram__sectors.sum                                        sector          191
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst           96
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            5
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::Array<char *, (int)1>>(int, T2, T3) (1, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte         1.95
+    dram__sectors.sum                                        sector           61
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::Array<char *, (int)1>>(int, T2, T3) (32, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte         1.95
+    dram__sectors.sum                                        sector           61
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::nll_loss_backward_reduce_cuda_kernel_2d<float, long>(T1 *, const T1 *, const T2 *, const T1 *, const T1 *, bool, int, int, long, long) (1, 1, 1)x(32, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte         3.94
+    dram__sectors.sum                                        sector          123
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst           16
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst          160
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void <unnamed>::softmax_warp_backward<float, float, float, (int)10, (bool)1, (bool)0>(T2 *, const T1 *, const T1 *, int, int, int, const bool *) (4, 1, 1)x(32, 4, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       141.95
+    dram__sectors.sum                                        sector         4436
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst        34944
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst        80000
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst        16000
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_32x32_sliced1x4_nn (128, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        17.93
+    dram__sectors.sum                                        sector       560363
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       393216
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    134217728
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       524288
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_128x32_nt (32, 32, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        15.02
+    dram__sectors.sum                                        sector       469232
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst     67108864
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      4194304
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)128, (int)4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (2, 1, 1)x(32, 4, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte        80.80
+    dram__sectors.sum                                        sector         2525
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst        19000
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, void at::native::<unnamed>::threshold_kernel_impl<float>(at::TensorIteratorBase &, T1, T1)::[lambda(float, float) (instance 1)]>, at::detail::Array<char *, (int)3>>(int, T2, T3) (128, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       526.46
+    dram__sectors.sum                                        sector        16452
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x32_sliced1x4_nn (64, 1, 6)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        70.03
+    dram__sectors.sum                                        sector      2188436
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    553648128
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)1, (bool)0, (bool)0>(cublasSplitKParams<T6>, const T4 *, const T5 *, T5 *, const T6 *, const T6 *, const T7 *, const T4 *, T7 *, void *, long, T6 *, int *) (128, 1, 1)x(32, 16, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         1.58
+    dram__sectors.sum                                        sector        49311
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       393216
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst        65536
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_128x32_nt (32, 128, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        65.96
+    dram__sectors.sum                                        sector      2061393
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    268435456
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst     16777216
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)128, (int)4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (8, 1, 1)x(32, 4, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       279.97
+    dram__sectors.sum                                        sector         8749
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst        77824
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, void at::native::<unnamed>::masked_scale_kernel<bool, float, float>(at::Tensor &, const at::Tensor &, const at::Tensor &, T3)::[lambda(float, bool) (instance 1)], at::detail::Array<char *, (int)3>>(int, T2, T3) (128, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       329.86
+    dram__sectors.sum                                        sector        10308
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       131072
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, void at::native::<unnamed>::threshold_kernel_impl<float>(at::TensorIteratorBase &, T1, T1)::[lambda(float, float) (instance 1)]>, at::detail::Array<char *, (int)3>>(int, T2, T3) (128, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       526.21
+    dram__sectors.sum                                        sector        16444
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_128x32_sliced1x4_nn (72, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte       152.74
+    dram__sectors.sum                                        sector      4773000
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       884736
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst   1207959552
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      1179648
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_128x64_nt (72, 64, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte       150.38
+    dram__sectors.sum                                        sector      4699415
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    603979776
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst     37748736
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)128, (int)4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (8, 1, 1)x(32, 4, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       279.97
+    dram__sectors.sum                                        sector         8749
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst        77824
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, void at::native::<unnamed>::masked_scale_kernel<bool, float, float>(at::Tensor &, const at::Tensor &, const at::Tensor &, T3)::[lambda(float, bool) (instance 1)], at::detail::Array<char *, (int)3>>(int, T2, T3) (288, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte       739.84
+    dram__sectors.sum                                        sector        23120
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       294912
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::Array<char *, (int)1>>(int, T2, T3) (288, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Kbyte         1.70
+    dram__sectors.sum                                        sector           53
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::atomic_adaptive_average_gradinput<float>(T1 *, const T1 *, int, int, int, int) (4096, 1, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         1.19
+    dram__sectors.sum                                        sector        37144
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      1474560
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::Array<char *, (int)1>>(int, T2, T3) (1352, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         1.07
+    dram__sectors.sum                                        sector        33559
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::max_pool_backward_nchw<float, float>(const T1 *, const long *, int, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *) (1, 16, 256)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        19.89
+    dram__sectors.sum                                        sector       621410
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       147456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, void at::native::<unnamed>::threshold_kernel_impl<float>(at::TensorIteratorBase &, T1, T1)::[lambda(float, float) (instance 1)]>, at::detail::Array<char *, (int)3>>(int, T2, T3) (1352, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         6.84
+    dram__sectors.sum                                        sector       213634
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (1, 256, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.76
+    dram__sectors.sum                                        sector       336224
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      6291456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (8, 32, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.47
+    dram__sectors.sum                                        sector       327061
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      1769472
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      1769472
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nt (4, 4, 36)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        30.52
+    dram__sectors.sum                                        sector       953871
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    603979776
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (1, 256, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        11.18
+    dram__sectors.sum                                        sector       349385
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2658304
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      5935104
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2658304
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (16, 16, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.84
+    dram__sectors.sum                                        sector       338889
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      6291456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3538944
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradDelta4x4<float, float>(cudnn::winograd_nonfused::WinogradDeltaParams<T1, T2>) (16, 16, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.85
+    dram__sectors.sum                                        sector       339048
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2752512
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      2490368
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2424832
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nt (4, 4, 36)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        38.18
+    dram__sectors.sum                                        sector      1193024
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    603979776
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradWgradOutputParams<T1, T2>) (8, 32, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.90
+    dram__sectors.sum                                        sector       340728
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst      1769472
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3538944
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst       589824
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       589824
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (16, 1, 1)x(32, 16, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         2.79
+    dram__sectors.sum                                        sector        87065
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       757760
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, void at::native::<unnamed>::threshold_kernel_impl<float>(at::TensorIteratorBase &, T1, T1)::[lambda(float, float) (instance 1)]>, at::detail::Array<char *, (int)3>>(int, T2, T3) (1352, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         6.79
+    dram__sectors.sum                                        sector       212089
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (1, 256, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.65
+    dram__sectors.sum                                        sector       332719
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      6291456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3145728
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (12, 32, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.19
+    dram__sectors.sum                                        sector       505862
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2654208
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      2654208
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_32x128_nt (8, 3, 36)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        40.64
+    dram__sectors.sum                                        sector      1270072
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    905969664
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3538944
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (1, 384, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        17.26
+    dram__sectors.sum                                        sector       539462
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3987456
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      8902656
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3987456
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (24, 16, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.90
+    dram__sectors.sum                                        sector       528054
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      9437184
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      4718592
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      5308416
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradDelta4x4<float, float>(cudnn::winograd_nonfused::WinogradDeltaParams<T1, T2>) (16, 16, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.72
+    dram__sectors.sum                                        sector       334889
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2752512
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      2490368
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2424832
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_32x128_nt (12, 2, 36)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        37.30
+    dram__sectors.sum                                        sector      1165670
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    905969664
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3538944
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradWgradOutputParams<T1, T2>) (12, 32, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.07
+    dram__sectors.sum                                        sector       502273
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst      2654208
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      5308416
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst       884736
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       884736
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (16, 1, 1)x(32, 16, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         2.79
+    dram__sectors.sum                                        sector        87069
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       757760
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, void at::native::<unnamed>::threshold_kernel_impl<float>(at::TensorIteratorBase &, T1, T1)::[lambda(float, float) (instance 1)]>, at::detail::Array<char *, (int)3>>(int, T2, T3) (2028, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        11.04
+    dram__sectors.sum                                        sector       344947
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (1, 384, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.72
+    dram__sectors.sum                                        sector       522508
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      9437184
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      4718592
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      4718592
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (6, 48, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        11.74
+    dram__sectors.sum                                        sector       366959
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      1990656
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      1990656
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nt (4, 3, 36)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        34.72
+    dram__sectors.sum                                        sector      1084852
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    679477248
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      1769472
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (1, 192, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         8.72
+    dram__sectors.sum                                        sector       272494
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      1993728
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      4451328
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      1993728
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (12, 16, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         7.81
+    dram__sectors.sum                                        sector       244212
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      4718592
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      2359296
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2654208
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradDelta4x4<float, float>(cudnn::winograd_nonfused::WinogradDeltaParams<T1, T2>) (24, 16, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        16.78
+    dram__sectors.sum                                        sector       524431
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      4128768
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      3735552
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      3637248
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nt (3, 6, 36)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        38.22
+    dram__sectors.sum                                        sector      1194245
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    679477248
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2654208
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradWgradOutputParams<T1, T2>) (6, 48, 1)x(32, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        12.09
+    dram__sectors.sum                                        sector       377792
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst      1990656
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3981312
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst       663552
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       663552
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (24, 1, 1)x(32, 16, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         4.23
+    dram__sectors.sum                                        sector       132239
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      1136640
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::Array<char *, (int)1>>(int, T2, T3) (4374, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         7.54
+    dram__sectors.sum                                        sector       235504
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::max_pool_backward_nchw<float, float>(const T1 *, const long *, int, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *) (3, 16, 192)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        63.44
+    dram__sectors.sum                                        sector      1982463
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       519168
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, void at::native::<unnamed>::threshold_kernel_impl<float>(at::TensorIteratorBase &, T1, T1)::[lambda(float, float) (instance 1)]>, at::detail::Array<char *, (int)3>>(int, T2, T3) (4374, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        25.52
+    dram__sectors.sum                                        sector       797646
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (2, 192, 1)x(936, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        26.56
+    dram__sectors.sum                                        sector       829859
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst     11501568
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst     79792128
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      4887552
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardFilter9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>) (1, 192, 1)x(64, 13, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         8.13
+    dram__sectors.sum                                        sector       254038
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      2433024
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      7520256
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nt (3, 1, 169)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        35.46
+    dram__sectors.sum                                        sector      1108023
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    398721024
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2076672
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardOutput9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>) (2, 64, 1)x(936, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         7.98
+    dram__sectors.sum                                        sector       249380
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       202752
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst     17980416
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst       949248
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradForwardData9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>) (2, 64, 1)x(936, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte         8.31
+    dram__sectors.sum                                        sector       259708
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3833856
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst     26597376
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      1629184
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradDelta9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradDeltaParams<T1, T2>) (36, 16, 1)x(624, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        26.63
+    dram__sectors.sum                                        sector       832298
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst     62042112
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      8515584
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  volta_sgemm_64x64_nn (3, 1, 169)x(64, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        32.95
+    dram__sectors.sum                                        sector      1029600
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst    299040768
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2076672
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void cudnn::winograd_nonfused::winogradWgradOutput9x9_5x5<float, float>(cudnn::winograd_nonfused::WinogradWgradOutputParams<T1, T2>) (12, 16, 1)x(208, 4, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.18
+    dram__sectors.sum                                        sector       318125
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      4030464
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst      8441856
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst        61440
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (192, 1, 1)x(32, 16, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.47
+    dram__sectors.sum                                        sector       327154
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3118080
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, at::detail::Array<char *, (int)1>>(int, T2, T3) (6050, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        10.97
+    dram__sectors.sum                                        sector       342872
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::<unnamed>::max_pool_backward_nchw<float, float>(const T1 *, const long *, int, long, long, long, int, int, int, int, int, int, int, int, int, int, T1 *) (12, 16, 64)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        87.87
+    dram__sectors.sum                                        sector      2745857
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst       746496
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<float, float, float, void at::native::<unnamed>::threshold_kernel_impl<float>(at::TensorIteratorBase &, T1, T1)::[lambda(float, float) (instance 1)]>, at::detail::Array<char *, (int)3>>(int, T2, T3) (6050, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        35.82
+    dram__sectors.sum                                        sector      1119515
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void wgrad_alg0_engine<float, (int)512, (int)6, (int)5, (int)3, (int)3, (int)3, (bool)0, (int)512>(int, int, int, const T1 *, int, T1 *, const T1 *, kernel_grad_params, unsigned long long, int, float, int, int, int, int) (6, 2, 96)x(8, 8, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        29.69
+    dram__sectors.sum                                        sector       927858
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst   1192230912
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst      2230272
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+
+  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator ()(at::TensorIterator &)::[lambda(float, float) (instance 1)]>, unsigned int, float, (int)4>>(T3) (64, 1, 1)x(32, 16, 1), Context 1, Stream 7, Device 0, CC 7.0
+    Section: Command line profiler metrics
+    --------------------------------------------------- ----------- ------------
+    Metric Name                                         Metric Unit Metric Value
+    --------------------------------------------------- ----------- ------------
+    dram__bytes.sum                                           Mbyte        13.93
+    dram__sectors.sum                                        sector       435222
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fadd_pred_on.sum        inst      3390464
+    smsp__sass_thread_inst_executed_op_ffma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_fmul_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hadd_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hfma_pred_on.sum        inst            0
+    smsp__sass_thread_inst_executed_op_hmul_pred_on.sum        inst            0
+    --------------------------------------------------- ----------- ------------
+

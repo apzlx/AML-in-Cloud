@@ -1,0 +1,12 @@
+==PROF== Connected to process 7981 (/opt/conda/bin/python3.10)
+==ERROR== Profiling is not supported on device 0. To find out supported GPUs refer --list-chips option.
+==PROF== Target process 8019 terminated before first instrumented API call.
+==PROF== Target process 8011 terminated before first instrumented API call.
+==PROF== Target process 8035 terminated before first instrumented API call.
+==PROF== Target process 8020 terminated before first instrumented API call.
+==PROF== Target process 8066 terminated before first instrumented API call.
+==PROF== Target process 8065 terminated before first instrumented API call.
+==PROF== Target process 8067 terminated before first instrumented API call.
+==PROF== Target process 8068 terminated before first instrumented API call.
+==PROF== Disconnected from process 7981
+==WARNING== No kernels were profiled.

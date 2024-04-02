@@ -1,4 +1,4 @@
-==PROF== Connected to process 14298 (/opt/conda/bin/python3.10)
+==PROF== Connected to process 6011 (/opt/conda/bin/python3.10)
 ==PROF== Profiling "computeOffsetsKernel" - 0: 0%....50%....100% - 3 passes
 ==PROF== Profiling "cudnn_infer_volta_scudnn_128x..." - 1: 0%....50%....100% - 3 passes
 ==PROF== Profiling "elementwise_kernel" - 2: 0%....50%....100% - 3 passes
@@ -110,16 +110,16 @@
 ==PROF== Profiling "vectorized_elementwise_kernel" - 108: 0%....50%....100% - 3 passes
 ==PROF== Profiling "wgrad_alg0_engine" - 109: 0%....50%....100% - 3 passes
 ==PROF== Profiling "reduce_kernel" - 110: 0%....50%....100% - 3 passes
-==PROF== Target process 14316 terminated before first instrumented API call.
-==PROF== Target process 14324 terminated before first instrumented API call.
-==PROF== Target process 14325 terminated before first instrumented API call.
-==PROF== Target process 14340 terminated before first instrumented API call.
-==PROF== Target process 14748 terminated before first instrumented API call.
-==PROF== Target process 14757 terminated before first instrumented API call.
-==PROF== Target process 14758 terminated before first instrumented API call.
-==PROF== Target process 14750 terminated before first instrumented API call.
-==PROF== Disconnected from process 14298
-[14298] python3.10@127.0.0.1
+==PROF== Target process 6033 terminated before first instrumented API call.
+==PROF== Target process 6041 terminated before first instrumented API call.
+==PROF== Target process 6042 terminated before first instrumented API call.
+==PROF== Target process 6057 terminated before first instrumented API call.
+==PROF== Target process 6502 terminated before first instrumented API call.
+==PROF== Target process 6501 terminated before first instrumented API call.
+==PROF== Target process 6504 terminated before first instrumented API call.
+==PROF== Target process 6503 terminated before first instrumented API call.
+==PROF== Disconnected from process 6011
+[6011] python3.10@127.0.0.1
   void cask_cudnn_infer::computeOffsetsKernel<(bool)0, (bool)0>(cask_cudnn_infer::ComputeOffsetsParams) (12, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 7.0
     Section: Command line profiler metrics
     --------------------------------------------------- ----------- ------------
@@ -127,6 +127,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte         3.04
     dram__sectors.sum                                        sector           95
+    gpu__time_duration.sum                                  usecond         3.36
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -143,8 +144,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        23.26
-    dram__sectors.sum                                        sector       726737
+    dram__bytes.sum                                           Mbyte        23.28
+    dram__sectors.sum                                        sector       727353
+    gpu__time_duration.sum                                  usecond       207.97
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -162,7 +164,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        23.39
-    dram__sectors.sum                                        sector       730937
+    dram__sectors.sum                                        sector       730944
+    gpu__time_duration.sum                                  usecond        34.18
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -180,7 +183,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        23.37
-    dram__sectors.sum                                        sector       730279
+    dram__sectors.sum                                        sector       730371
+    gpu__time_duration.sum                                  usecond        31.04
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -197,8 +201,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        19.84
-    dram__sectors.sum                                        sector       619930
+    dram__bytes.sum                                           Mbyte        19.83
+    dram__sectors.sum                                        sector       619704
+    gpu__time_duration.sum                                  usecond        34.46
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -215,8 +220,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         8.40
-    dram__sectors.sum                                        sector       262482
+    dram__bytes.sum                                           Mbyte         8.29
+    dram__sectors.sum                                        sector       259090
+    gpu__time_duration.sum                                  usecond        21.12
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -233,8 +239,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         8.13
-    dram__sectors.sum                                        sector       254025
+    dram__bytes.sum                                           Mbyte         8.15
+    dram__sectors.sum                                        sector       254580
+    gpu__time_duration.sum                                  usecond        16.90
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -251,8 +258,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        32.06
-    dram__sectors.sum                                        sector      1001866
+    dram__bytes.sum                                           Mbyte        32.45
+    dram__sectors.sum                                        sector      1013962
+    gpu__time_duration.sum                                  usecond        85.92
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -269,8 +277,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        27.52
-    dram__sectors.sum                                        sector       859920
+    dram__bytes.sum                                           Mbyte        27.56
+    dram__sectors.sum                                        sector       861161
+    gpu__time_duration.sum                                  usecond        49.57
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -288,7 +297,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        16.53
-    dram__sectors.sum                                        sector       516464
+    dram__sectors.sum                                        sector       516469
+    gpu__time_duration.sum                                  usecond        26.05
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -305,8 +315,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        16.56
-    dram__sectors.sum                                        sector       517600
+    dram__bytes.sum                                           Mbyte        16.55
+    dram__sectors.sum                                        sector       517328
+    gpu__time_duration.sum                                  usecond        23.30
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -323,8 +334,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        13.82
-    dram__sectors.sum                                        sector       431805
+    dram__bytes.sum                                           Mbyte        13.79
+    dram__sectors.sum                                        sector       430981
+    gpu__time_duration.sum                                  usecond        27.17
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -341,8 +353,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         7.80
-    dram__sectors.sum                                        sector       243816
+    dram__bytes.sum                                           Mbyte         7.79
+    dram__sectors.sum                                        sector       243371
+    gpu__time_duration.sum                                  usecond        15.97
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -359,8 +372,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        11.82
-    dram__sectors.sum                                        sector       369452
+    dram__bytes.sum                                           Mbyte        11.81
+    dram__sectors.sum                                        sector       369077
+    gpu__time_duration.sum                                  usecond        17.86
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -377,8 +391,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        30.48
-    dram__sectors.sum                                        sector       952347
+    dram__bytes.sum                                           Mbyte        31.37
+    dram__sectors.sum                                        sector       980381
+    gpu__time_duration.sum                                  usecond       127.04
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -396,7 +411,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        17.26
-    dram__sectors.sum                                        sector       539347
+    dram__sectors.sum                                        sector       539498
+    gpu__time_duration.sum                                  usecond        28.70
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -413,8 +429,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         6.63
-    dram__sectors.sum                                        sector       207057
+    dram__bytes.sum                                           Mbyte         6.64
+    dram__sectors.sum                                        sector       207436
+    gpu__time_duration.sum                                  usecond        13.79
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -431,8 +448,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         6.64
-    dram__sectors.sum                                        sector       207379
+    dram__bytes.sum                                           Mbyte         6.58
+    dram__sectors.sum                                        sector       205577
+    gpu__time_duration.sum                                  usecond        10.14
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -449,8 +467,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        16.76
-    dram__sectors.sum                                        sector       523701
+    dram__bytes.sum                                           Mbyte        16.75
+    dram__sectors.sum                                        sector       523484
+    gpu__time_duration.sum                                  usecond        27.87
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -467,8 +486,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        16.17
-    dram__sectors.sum                                        sector       505426
+    dram__bytes.sum                                           Mbyte        16.22
+    dram__sectors.sum                                        sector       506765
+    gpu__time_duration.sum                                  usecond        22.46
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -485,8 +505,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        45.04
-    dram__sectors.sum                                        sector      1407566
+    dram__bytes.sum                                           Mbyte        50.23
+    dram__sectors.sum                                        sector      1569808
+    gpu__time_duration.sum                                  usecond       172.22
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -503,8 +524,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        11.13
-    dram__sectors.sum                                        sector       347810
+    dram__bytes.sum                                           Mbyte        11.16
+    dram__sectors.sum                                        sector       348766
+    gpu__time_duration.sum                                  usecond        20.93
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -522,7 +544,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         3.85
-    dram__sectors.sum                                        sector       120283
+    dram__sectors.sum                                        sector       120288
+    gpu__time_duration.sum                                  usecond        10.69
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -540,7 +563,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         3.84
-    dram__sectors.sum                                        sector       120122
+    dram__sectors.sum                                        sector       120127
+    gpu__time_duration.sum                                  usecond         7.87
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -557,8 +581,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.76
-    dram__sectors.sum                                        sector       336225
+    dram__bytes.sum                                           Mbyte        10.80
+    dram__sectors.sum                                        sector       337406
+    gpu__time_duration.sum                                  usecond        18.78
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -575,8 +600,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.33
-    dram__sectors.sum                                        sector       322929
+    dram__bytes.sum                                           Mbyte        10.38
+    dram__sectors.sum                                        sector       324232
+    gpu__time_duration.sum                                  usecond        16.38
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -593,8 +619,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        30.43
-    dram__sectors.sum                                        sector       950814
+    dram__bytes.sum                                           Mbyte        32.02
+    dram__sectors.sum                                        sector      1000595
+    gpu__time_duration.sum                                  usecond       120.06
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -611,8 +638,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        11.10
-    dram__sectors.sum                                        sector       346833
+    dram__bytes.sum                                           Mbyte        11.12
+    dram__sectors.sum                                        sector       347349
+    gpu__time_duration.sum                                  usecond        21.12
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -630,7 +658,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         3.85
-    dram__sectors.sum                                        sector       120317
+    dram__sectors.sum                                        sector       120316
+    gpu__time_duration.sum                                  usecond        10.69
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -647,8 +676,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         3.85
-    dram__sectors.sum                                        sector       120188
+    dram__bytes.sum                                           Mbyte         3.84
+    dram__sectors.sum                                        sector       120132
+    gpu__time_duration.sum                                  usecond         7.36
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -665,8 +695,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         2.99
-    dram__sectors.sum                                        sector        93435
+    dram__bytes.sum                                           Mbyte         2.98
+    dram__sectors.sum                                        sector        93154
+    gpu__time_duration.sum                                  usecond        12.16
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -683,8 +714,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       600.58
-    dram__sectors.sum                                        sector        18768
+    dram__bytes.sum                                           Kbyte       600.61
+    dram__sectors.sum                                        sector        18769
+    gpu__time_duration.sum                                  usecond        29.38
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -701,8 +733,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       595.14
-    dram__sectors.sum                                        sector        18598
+    dram__bytes.sum                                           Kbyte       595.07
+    dram__sectors.sum                                        sector        18596
+    gpu__time_duration.sum                                  usecond         6.30
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -719,8 +752,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte       155.69
-    dram__sectors.sum                                        sector      4865396
+    dram__bytes.sum                                           Mbyte       155.56
+    dram__sectors.sum                                        sector      4861208
+    gpu__time_duration.sum                                  usecond       297.66
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -739,6 +773,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte       264.32
     dram__sectors.sum                                        sector         8260
+    gpu__time_duration.sum                                  usecond         3.71
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -757,6 +792,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte       267.26
     dram__sectors.sum                                        sector         8352
+    gpu__time_duration.sum                                  usecond         5.79
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -773,8 +809,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        71.19
-    dram__sectors.sum                                        sector      2224757
+    dram__bytes.sum                                           Mbyte        71.66
+    dram__sectors.sum                                        sector      2239277
+    gpu__time_duration.sum                                  usecond       145.25
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -791,8 +828,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       264.32
-    dram__sectors.sum                                        sector         8260
+    dram__bytes.sum                                           Kbyte       264.45
+    dram__sectors.sum                                        sector         8264
+    gpu__time_duration.sum                                  usecond         3.58
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -810,7 +848,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        18.78
-    dram__sectors.sum                                        sector       586741
+    dram__sectors.sum                                        sector       586789
+    gpu__time_duration.sum                                  usecond        45.25
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -827,8 +866,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       651.36
-    dram__sectors.sum                                        sector        20355
+    dram__bytes.sum                                           Kbyte       651.62
+    dram__sectors.sum                                        sector        20363
+    gpu__time_duration.sum                                  usecond         7.30
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -847,6 +887,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte        76.16
     dram__sectors.sum                                        sector         2380
+    gpu__time_duration.sum                                  usecond         9.57
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -865,6 +906,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte         6.11
     dram__sectors.sum                                        sector          191
+    gpu__time_duration.sum                                  usecond         5.28
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -883,6 +925,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte         1.95
     dram__sectors.sum                                        sector           61
+    gpu__time_duration.sum                                  usecond         3.07
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -901,6 +944,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte         1.95
     dram__sectors.sum                                        sector           61
+    gpu__time_duration.sum                                  usecond         3.20
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -919,6 +963,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte         3.94
     dram__sectors.sum                                        sector          123
+    gpu__time_duration.sum                                  usecond         4.67
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -935,8 +980,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       141.95
-    dram__sectors.sum                                        sector         4436
+    dram__bytes.sum                                           Kbyte       142.08
+    dram__sectors.sum                                        sector         4440
+    gpu__time_duration.sum                                  usecond        10.59
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -954,7 +1000,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        17.93
-    dram__sectors.sum                                        sector       560363
+    dram__sectors.sum                                        sector       560385
+    gpu__time_duration.sum                                  usecond        48.96
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -972,7 +1019,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        15.02
-    dram__sectors.sum                                        sector       469232
+    dram__sectors.sum                                        sector       469395
+    gpu__time_duration.sum                                  usecond        33.70
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -991,6 +1039,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte        80.80
     dram__sectors.sum                                        sector         2525
+    gpu__time_duration.sum                                  usecond        11.10
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1007,8 +1056,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       526.46
-    dram__sectors.sum                                        sector        16452
+    dram__bytes.sum                                           Kbyte       526.59
+    dram__sectors.sum                                        sector        16456
+    gpu__time_duration.sum                                  usecond         4.64
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1025,8 +1075,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        70.03
-    dram__sectors.sum                                        sector      2188436
+    dram__bytes.sum                                           Mbyte        70.10
+    dram__sectors.sum                                        sector      2190724
+    gpu__time_duration.sum                                  usecond       118.56
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1045,6 +1096,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         1.58
     dram__sectors.sum                                        sector        49311
+    gpu__time_duration.sum                                  usecond         7.65
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1061,8 +1113,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        65.96
-    dram__sectors.sum                                        sector      2061393
+    dram__bytes.sum                                           Mbyte        65.95
+    dram__sectors.sum                                        sector      2061053
+    gpu__time_duration.sum                                  usecond        98.56
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1081,6 +1134,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte       279.97
     dram__sectors.sum                                        sector         8749
+    gpu__time_duration.sum                                  usecond        11.46
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1097,8 +1151,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       329.86
-    dram__sectors.sum                                        sector        10308
+    dram__bytes.sum                                           Kbyte       329.98
+    dram__sectors.sum                                        sector        10312
+    gpu__time_duration.sum                                  usecond         4.10
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1115,8 +1170,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       526.21
-    dram__sectors.sum                                        sector        16444
+    dram__bytes.sum                                           Kbyte       526.34
+    dram__sectors.sum                                        sector        16448
+    gpu__time_duration.sum                                  usecond         4.29
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1133,8 +1189,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte       152.74
-    dram__sectors.sum                                        sector      4773000
+    dram__bytes.sum                                           Mbyte       152.73
+    dram__sectors.sum                                        sector      4772951
+    gpu__time_duration.sum                                  usecond       223.30
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1152,7 +1209,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte       150.38
-    dram__sectors.sum                                        sector      4699415
+    dram__sectors.sum                                        sector      4699352
+    gpu__time_duration.sum                                  usecond       196.61
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1169,8 +1227,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte       279.97
-    dram__sectors.sum                                        sector         8749
+    dram__bytes.sum                                           Kbyte       279.71
+    dram__sectors.sum                                        sector         8741
+    gpu__time_duration.sum                                  usecond        11.30
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1189,6 +1248,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Kbyte       739.84
     dram__sectors.sum                                        sector        23120
+    gpu__time_duration.sum                                  usecond         5.34
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1205,8 +1265,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Kbyte         1.70
-    dram__sectors.sum                                        sector           53
+    dram__bytes.sum                                           Kbyte         1.82
+    dram__sectors.sum                                        sector           57
+    gpu__time_duration.sum                                  usecond         3.62
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1225,6 +1286,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         1.19
     dram__sectors.sum                                        sector        37144
+    gpu__time_duration.sum                                  usecond        28.74
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1242,7 +1304,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         1.07
-    dram__sectors.sum                                        sector        33559
+    dram__sectors.sum                                        sector        33570
+    gpu__time_duration.sum                                  usecond         5.41
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1259,8 +1322,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        19.89
-    dram__sectors.sum                                        sector       621410
+    dram__bytes.sum                                           Mbyte        19.81
+    dram__sectors.sum                                        sector       619205
+    gpu__time_duration.sum                                  usecond        46.05
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1277,8 +1341,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         6.84
-    dram__sectors.sum                                        sector       213634
+    dram__bytes.sum                                           Mbyte         6.86
+    dram__sectors.sum                                        sector       214377
+    gpu__time_duration.sum                                  usecond        12.96
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1295,8 +1360,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.76
-    dram__sectors.sum                                        sector       336224
+    dram__bytes.sum                                           Mbyte        10.73
+    dram__sectors.sum                                        sector       335191
+    gpu__time_duration.sum                                  usecond        18.94
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1313,8 +1379,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.47
-    dram__sectors.sum                                        sector       327061
+    dram__bytes.sum                                           Mbyte        10.44
+    dram__sectors.sum                                        sector       326358
+    gpu__time_duration.sum                                  usecond        15.78
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1331,8 +1398,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        30.52
-    dram__sectors.sum                                        sector       953871
+    dram__bytes.sum                                           Mbyte        39.87
+    dram__sectors.sum                                        sector      1245968
+    gpu__time_duration.sum                                  usecond       120.32
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1349,8 +1417,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        11.18
-    dram__sectors.sum                                        sector       349385
+    dram__bytes.sum                                           Mbyte        11.20
+    dram__sectors.sum                                        sector       349941
+    gpu__time_duration.sum                                  usecond        21.38
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1367,8 +1436,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.84
-    dram__sectors.sum                                        sector       338889
+    dram__bytes.sum                                           Mbyte        10.85
+    dram__sectors.sum                                        sector       338951
+    gpu__time_duration.sum                                  usecond        21.92
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1385,8 +1455,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.85
-    dram__sectors.sum                                        sector       339048
+    dram__bytes.sum                                           Mbyte        10.83
+    dram__sectors.sum                                        sector       338558
+    gpu__time_duration.sum                                  usecond        19.17
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1403,8 +1474,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        38.18
-    dram__sectors.sum                                        sector      1193024
+    dram__bytes.sum                                           Mbyte        38.59
+    dram__sectors.sum                                        sector      1205966
+    gpu__time_duration.sum                                  usecond       120.32
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1421,8 +1493,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.90
-    dram__sectors.sum                                        sector       340728
+    dram__bytes.sum                                           Mbyte        10.91
+    dram__sectors.sum                                        sector       340965
+    gpu__time_duration.sum                                  usecond        20.96
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst      1769472
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1441,6 +1514,7 @@
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         2.79
     dram__sectors.sum                                        sector        87065
+    gpu__time_duration.sum                                  usecond        24.93
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1457,8 +1531,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         6.79
-    dram__sectors.sum                                        sector       212089
+    dram__bytes.sum                                           Mbyte         6.81
+    dram__sectors.sum                                        sector       212713
+    gpu__time_duration.sum                                  usecond        12.26
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1475,8 +1550,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.65
-    dram__sectors.sum                                        sector       332719
+    dram__bytes.sum                                           Mbyte        10.69
+    dram__sectors.sum                                        sector       334089
+    gpu__time_duration.sum                                  usecond        19.07
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1493,8 +1569,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        16.19
-    dram__sectors.sum                                        sector       505862
+    dram__bytes.sum                                           Mbyte        16.23
+    dram__sectors.sum                                        sector       507272
+    gpu__time_duration.sum                                  usecond        22.27
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1511,8 +1588,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        40.64
-    dram__sectors.sum                                        sector      1270072
+    dram__bytes.sum                                           Mbyte        38.64
+    dram__sectors.sum                                        sector      1207580
+    gpu__time_duration.sum                                  usecond       157.47
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1529,8 +1607,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        17.26
-    dram__sectors.sum                                        sector       539462
+    dram__bytes.sum                                           Mbyte        17.36
+    dram__sectors.sum                                        sector       542626
+    gpu__time_duration.sum                                  usecond        27.58
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1547,8 +1626,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        16.90
-    dram__sectors.sum                                        sector       528054
+    dram__bytes.sum                                           Mbyte        16.70
+    dram__sectors.sum                                        sector       521861
+    gpu__time_duration.sum                                  usecond        27.68
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1565,8 +1645,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.72
-    dram__sectors.sum                                        sector       334889
+    dram__bytes.sum                                           Mbyte        10.74
+    dram__sectors.sum                                        sector       335707
+    gpu__time_duration.sum                                  usecond        18.05
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1583,8 +1664,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        37.30
-    dram__sectors.sum                                        sector      1165670
+    dram__bytes.sum                                           Mbyte        38.82
+    dram__sectors.sum                                        sector      1213127
+    gpu__time_duration.sum                                  usecond       159.94
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1601,8 +1683,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        16.07
-    dram__sectors.sum                                        sector       502273
+    dram__bytes.sum                                           Mbyte        16.17
+    dram__sectors.sum                                        sector       505423
+    gpu__time_duration.sum                                  usecond        26.75
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst      2654208
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1620,7 +1703,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte         2.79
-    dram__sectors.sum                                        sector        87069
+    dram__sectors.sum                                        sector        87073
+    gpu__time_duration.sum                                  usecond        24.83
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1637,8 +1721,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        11.04
-    dram__sectors.sum                                        sector       344947
+    dram__bytes.sum                                           Mbyte        11.05
+    dram__sectors.sum                                        sector       345209
+    gpu__time_duration.sum                                  usecond        17.50
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1655,8 +1740,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        16.72
-    dram__sectors.sum                                        sector       522508
+    dram__bytes.sum                                           Mbyte        16.77
+    dram__sectors.sum                                        sector       524152
+    gpu__time_duration.sum                                  usecond        27.78
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1673,8 +1759,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        11.74
-    dram__sectors.sum                                        sector       366959
+    dram__bytes.sum                                           Mbyte        11.73
+    dram__sectors.sum                                        sector       366640
+    gpu__time_duration.sum                                  usecond        17.86
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1691,8 +1778,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        34.72
-    dram__sectors.sum                                        sector      1084852
+    dram__bytes.sum                                           Mbyte        36.98
+    dram__sectors.sum                                        sector      1155650
+    gpu__time_duration.sum                                  usecond       164.64
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1709,8 +1797,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         8.72
-    dram__sectors.sum                                        sector       272494
+    dram__bytes.sum                                           Mbyte         8.73
+    dram__sectors.sum                                        sector       272812
+    gpu__time_duration.sum                                  usecond        17.95
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1727,8 +1816,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         7.81
-    dram__sectors.sum                                        sector       244212
+    dram__bytes.sum                                           Mbyte         7.77
+    dram__sectors.sum                                        sector       242764
+    gpu__time_duration.sum                                  usecond        16.35
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1746,7 +1836,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        16.78
-    dram__sectors.sum                                        sector       524431
+    dram__sectors.sum                                        sector       524384
+    gpu__time_duration.sum                                  usecond        26.43
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1763,8 +1854,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        38.22
-    dram__sectors.sum                                        sector      1194245
+    dram__bytes.sum                                           Mbyte        46.87
+    dram__sectors.sum                                        sector      1464615
+    gpu__time_duration.sum                                  usecond       143.01
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1782,7 +1874,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        12.09
-    dram__sectors.sum                                        sector       377792
+    dram__sectors.sum                                        sector       377852
+    gpu__time_duration.sum                                  usecond        21.95
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst      1990656
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1799,8 +1892,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         4.23
-    dram__sectors.sum                                        sector       132239
+    dram__bytes.sum                                           Mbyte         4.22
+    dram__sectors.sum                                        sector       131905
+    gpu__time_duration.sum                                  usecond        24.77
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1817,8 +1911,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         7.54
-    dram__sectors.sum                                        sector       235504
+    dram__bytes.sum                                           Mbyte         7.57
+    dram__sectors.sum                                        sector       236446
+    gpu__time_duration.sum                                  usecond        12.35
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1835,8 +1930,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        63.44
-    dram__sectors.sum                                        sector      1982463
+    dram__bytes.sum                                           Mbyte        63.50
+    dram__sectors.sum                                        sector      1984401
+    gpu__time_duration.sum                                  usecond       122.50
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1853,8 +1949,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        25.52
-    dram__sectors.sum                                        sector       797646
+    dram__bytes.sum                                           Mbyte        25.54
+    dram__sectors.sum                                        sector       798156
+    gpu__time_duration.sum                                  usecond        34.94
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1871,8 +1968,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        26.56
-    dram__sectors.sum                                        sector       829859
+    dram__bytes.sum                                           Mbyte        26.52
+    dram__sectors.sum                                        sector       828797
+    gpu__time_duration.sum                                  usecond        53.98
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1889,8 +1987,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         8.13
-    dram__sectors.sum                                        sector       254038
+    dram__bytes.sum                                           Mbyte         8.14
+    dram__sectors.sum                                        sector       254506
+    gpu__time_duration.sum                                  usecond        16.96
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1907,8 +2006,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        35.46
-    dram__sectors.sum                                        sector      1108023
+    dram__bytes.sum                                           Mbyte        34.71
+    dram__sectors.sum                                        sector      1084768
+    gpu__time_duration.sum                                  usecond        91.55
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1925,8 +2025,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         7.98
-    dram__sectors.sum                                        sector       249380
+    dram__bytes.sum                                           Mbyte         7.99
+    dram__sectors.sum                                        sector       249565
+    gpu__time_duration.sum                                  usecond        20.58
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1943,8 +2044,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte         8.31
-    dram__sectors.sum                                        sector       259708
+    dram__bytes.sum                                           Mbyte         8.14
+    dram__sectors.sum                                        sector       254229
+    gpu__time_duration.sum                                  usecond        21.22
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1961,8 +2063,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        26.63
-    dram__sectors.sum                                        sector       832298
+    dram__bytes.sum                                           Mbyte        26.70
+    dram__sectors.sum                                        sector       834372
+    gpu__time_duration.sum                                  usecond        48.80
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1979,8 +2082,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        32.95
-    dram__sectors.sum                                        sector      1029600
+    dram__bytes.sum                                           Mbyte        33.07
+    dram__sectors.sum                                        sector      1033547
+    gpu__time_duration.sum                                  usecond        77.02
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -1997,8 +2101,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.18
-    dram__sectors.sum                                        sector       318125
+    dram__bytes.sum                                           Mbyte        10.19
+    dram__sectors.sum                                        sector       318492
+    gpu__time_duration.sum                                  usecond        27.65
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -2015,8 +2120,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.47
-    dram__sectors.sum                                        sector       327154
+    dram__bytes.sum                                           Mbyte        10.46
+    dram__sectors.sum                                        sector       326951
+    gpu__time_duration.sum                                  usecond        22.46
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -2033,8 +2139,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        10.97
-    dram__sectors.sum                                        sector       342872
+    dram__bytes.sum                                           Mbyte        10.98
+    dram__sectors.sum                                        sector       342987
+    gpu__time_duration.sum                                  usecond        16.29
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -2051,8 +2158,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        87.87
-    dram__sectors.sum                                        sector      2745857
+    dram__bytes.sum                                           Mbyte        87.96
+    dram__sectors.sum                                        sector      2748655
+    gpu__time_duration.sum                                  usecond       167.10
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -2069,8 +2177,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        35.82
-    dram__sectors.sum                                        sector      1119515
+    dram__bytes.sum                                           Mbyte        35.87
+    dram__sectors.sum                                        sector      1121001
+    gpu__time_duration.sum                                  usecond        46.11
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -2087,8 +2196,9 @@
     --------------------------------------------------- ----------- ------------
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
-    dram__bytes.sum                                           Mbyte        29.69
-    dram__sectors.sum                                        sector       927858
+    dram__bytes.sum                                           Mbyte        32.15
+    dram__sectors.sum                                        sector      1004548
+    gpu__time_duration.sum                                  usecond       319.84
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
@@ -2106,7 +2216,8 @@
     Metric Name                                         Metric Unit Metric Value
     --------------------------------------------------- ----------- ------------
     dram__bytes.sum                                           Mbyte        13.93
-    dram__sectors.sum                                        sector       435222
+    dram__sectors.sum                                        sector       435192
+    gpu__time_duration.sum                                  usecond        32.13
     smsp__sass_thread_inst_executed_op_dadd_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dfma_pred_on.sum        inst            0
     smsp__sass_thread_inst_executed_op_dmul_pred_on.sum        inst            0
